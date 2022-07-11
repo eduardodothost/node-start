@@ -1,0 +1,159 @@
+/* general */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+:root {
+    --primary-bg-color: #ffebcd;
+    --primary-color: #333;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    color: var(--primary-color);
+    line-height: 1.6;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+h1,
+h2 {
+    font-weight: 300;
+    line-height: 1.2;
+    margin: 10px 0;
+}
+
+p {
+    /* top and bottom margin */
+    margin: 10px 0;
+}
+
+img {
+    width:100%;
+}
+
+/* navbar */
+
+
+.navbar {
+    background-color: var(--primary-bg-color);
+    color: 333px;
+    height: 70px;
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar .flex {
+    justify-content: space-between;
+}
+
+.navbar a {
+    padding: 10px;
+    margin: 0 5px;
+}
+
+.navbar a:hover {
+    border-bottom: 2px #333 dotted;
+}
+
+/* showcase */
+
+.showcase {
+    height: 400px;
+    background-color: var(--primary-bg-color);
+    color:var(--primary-color);
+    position: relative;
+}
+
+.showcase h1 {
+    font-size: 40px;
+}
+
+.showcase p {
+    margin: 20px 0;
+}
+
+.showcase .grid {
+    grid-template-columns: 55% 45%;
+    gap: 30px;
+    overflow: visible;
+}
+
+.showcase-form {
+    position: relative;
+    top: 60px;
+    height: 350px;
+    width: 400px;
+    padding: 40px;
+    z-index: 100;
+    justify-self: flex-end;
+}
+
+.showcase-form .form-control {
+    margin: 30px 0;
+}
+
+.showcase-form input[type='text'],
+.showcase-form input[type='email'] {
+    border: 0;
+    border-bottom: 1px dotted var(--primary-color);
+    width: 100%;
+    padding: 3px;
+    font-size: 16px;
+}
+
+.showcase-form input:focus {
+    outline: none;
+
+}
+
+.showcase::before,
+.showcase::after {
+    content: '';
+    position: absolute;
+    height: 100px;
+    bottom: -70px;
+    right: 0;
+    left: 0;
+    transform: skewY(-.5deg);
+    -webkit-transform: skewY(-.5deg);
+    -moz-transform: skewY(-1deg);
+    -ms-transform: skewY(-1.5deg);
+    background: #fff;
+}
+
+
+/* stats */
+
+.stats {
+    padding-top: 100px;
+}
+
+.stats-heading {
+    max-width: 500px;
+    margin: auto;
+    
+}
+
+.stats .grid h3 {
+    font-size: 35px;
+}
+
+.stats .grid p {
+    font-size: 20px;
+    font-weight: bold;
+}
